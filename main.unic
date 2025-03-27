@@ -1,0 +1,5 @@
+cls HelloWorld begin
+    func main(String[] args) begin
+        print("Hello, world!");
+    end
+end

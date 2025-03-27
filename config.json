@@ -1,0 +1,11 @@
+{
+    "language": "java",
+    "aliases": {
+      "print": "System.out.println",
+      "func": "void",
+      "cls": "class",
+      "begin": "{",
+      "end": "}"
+    }
+  }
+  
