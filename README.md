@@ -3,10 +3,10 @@
 Unic is a **universal compiler/interpreter** that reads a **custom syntax configuration file (`.cfg.json`)** and processes **.unic files**, converting them into Java or Python based on the user-defined rules.
 
 ## **📌 Features**
-✅ **Customizable syntax** – Define language rules via `.cfg.json`.  
-✅ **Compiles or interprets** based on config settings.  
-✅ **Works from any directory** – Finds config in the source `.unic` file's directory.  
-✅ **Cross-platform** – Works on **Linux, Windows, and macOS**.  
+✅ **Customizable syntax** – Define language rules via `.cfg.json`.
+✅ **Compiles or interprets** based on config settings.
+✅ **Works from any directory** – Finds config in the source `.unic` file's directory.
+✅ **Cross-platform** – Works on **Linux, Windows, and macOS**.
 
 ---
 
@@ -38,7 +38,7 @@ unic/                      # Root directory
 ## **📥 Installation**
 ### **🔹 Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/unic.git
+git clone https://github.com/IC7400A/UniversalCompiler.git
 cd unic
 ```
 
@@ -54,7 +54,7 @@ make
 ```sh
 ./bin/unic path/to/source.unic
 ```
-> **Example:**  
+> **Example:**
 ```sh
 ./bin/unic examples/hello.unic
 ```
