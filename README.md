@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **Unic – A Universal Compiler** 🚀
 
 Unic is a **universal compiler/interpreter** that reads a **custom syntax configuration file (`.cfg.json`)** and processes **.unic files**, converting them into Java or Python based on the user-defined rules.
@@ -105,3 +106,11 @@ make clean
 
 ## **📜 License**
 This project is licensed under the **MIT License**.
+=======
+# UniversalCompiler
+This is an abstraction layer that sits between compiler and user to remove language rules . Goal is to interpret any language and compile any language to machine code 
+# Expected Features
+compile python to machine code <br>
+Interpret c <br>
+and many more to try. <br>
+>>>>>>> 1d1ebb7ded72ebe1c48ee9e6e29414297ee1bf54
