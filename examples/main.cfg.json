@@ -1,0 +1,12 @@
+{
+  "aliases": {
+    "func": "int",
+    "begin": "{",
+    "end": "}",
+    "loop": "for",
+    "print": "printf",
+    "inc": "#include"
+  },
+  "compile_command": "g++ {output_file} -o {exe_file}",
+  "run_command": "./{exe_file}"
+}

@@ -1,0 +1,23 @@
+inc <stdio.h>
+
+func add(func a, func b) begin
+  return a + b;
+end
+
+func main() begin
+  func x = 10;
+  func y = 20;
+  func result = add(x, y);
+
+  print("Sum: %d\n", result);
+
+  loop (func i = 0; i < 5; i++) begin
+    if (i % 2 == 0) begin
+      print("Even: %d\n", i);
+    end else begin
+      print("Odd: %d\n", i);
+    end
+  end
+
+  return 0;
+end

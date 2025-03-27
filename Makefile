@@ -1,26 +1,22 @@
-# Compiler
 CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Iinclude/
 
-# Compiler Flags
-CXXFLAGS = -Wall -Wextra -std=c++17
+OBJ_DIR = obj
+SRC_DIR = src
+BIN_DIR = bin
 
-# Source and Output
-SRC = unic.cc
-TARGET = unic
+SRCS = $(wildcard $(SRC_DIR)/*.cc)
+OBJS = $(patsubst $(SRC_DIR)/%.cc, $(OBJ_DIR)/%.o, $(SRCS))
 
-# Build the executable
-all: $(TARGET)
+TARGET = $(BIN_DIR)/unic
 
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+$(TARGET): $(OBJS)
+	mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(TARGET)
 
-# Run the program with an input file
-run: $(TARGET)
-	./$(TARGET) myfile.alias
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cc
+	mkdir -p $(OBJ_DIR)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Clean compiled files
 clean:
-	rm -f $(TARGET) output.*
-
-# Rebuild from scratch
-rebuild: clean all
+	rm -rf $(OBJ_DIR) $(BIN_DIR)
